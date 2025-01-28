@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portifolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d0f23bb2cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+
+    <div class="container">
+
+      <nav>
+
+        <img src="images/Logo.jpg" class="logo" alt="The website's Logo"> 
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>Frontend-Developer</p>
+        <h1>Hi, I'm <span>Kingsley</span><br>Owoh From Nigeria</h1>
+      </div>
+
+    </div>
+
+  </div>
+<!-- ..........About me section.......... -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="images/adim.jpg" alt="Adim sitting on a sofa chair">
+        </div>
+        <div class="col-2">
+          <h1 class="sub-title">ABOUT ME</h1>
+          <p>
+            Hi, I'm Kingsley Owoh, a passionate and curious junior web developer on an exciting journey into the world
+            of software development. 
+            My goal is to continuously learn, grow, and eventually become a proficient professional in the tech industry. <br>
+
+            I hail from Udi, a small town in Enugu State, Nigeria, and I'm currently 28 years old.
+            My interest in coding stems from a deep curiosity about how technology works and a strong desire to create
+            impactful solutions through innovative web applications. <br>
+
+            With a focus on front-end development, I specialize in building responsive and user-friendly web designs. 
+            I enjoy turning creative ideas into functional and visually appealing digital experiences. <br>
+
+            When I'm not coding, I spend time exploring new technologies, sharpening my skills,
+            and finding ways to contribute to the tech community. I'm always eager to connect with
+            like-minded individuals and collaborate on meaningful projects. <br>
+
+            Feel free to reach out—I'd love to share ideas or discuss exciting opportunities!
+          </p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing a Web app interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Andriod/iOS Apps</li> 
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2019 - 2022</span><br>MicroSoft Office package at Afrihub Imt Enugu.</li>
+              <li><span>2024 - current</span><br>UI/UX training at freecodecamp.</li>
+              <li><span>2022 - 2023</span><br>Responsive web design at Icon Tees Nig Ltd.</li>
+              <li><span>2023 - current</span><br>Frontend developer training at AltSchool Africa.</li> 
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016 - 2019</span><br>Diploma in Mass Communication, IMT Enugu.</li>
+              <li><span>2019 - 2021</span><br>Higher Diploma in Mass Communication, IMT Enugu.</li>
+              <li><span>2023</span><br>diploma in Responsive Web design, freecodecamp.</li> 
+              <li><span>2024 - current</span><br>Diploma in Frontend Engineering, AltSchool Africa.</li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- .............Services section............. -->
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title">MY SERVICES</h1>
+    <div class="services-list">
+       <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Responsive Web Design</h2>
+        <p>
+          I create visually appealing websites that look and 
+          function flawlessly across all devices—desktops, 
+          tablets, and smartphones.
+        </p>
+        <a href="#">Learn more</a>
+       </div>
+       <div>
+        <i class="fa-duotone fa-solid fa-toolbox"></i>
+        <h2>Website Maintenance and Optimization</h2>
+        <p>
+          I provide ongoing support to keep your website updated,
+          secure, and running efficiently. This includes optimizing
+          for speed,accessibility, and overall performance.
+        </p>
+        <a href="#">Learn more</a>
+       </div>
+       <div>
+        <i class="fa-sharp fa-solid fa-file-code"></i>
+        <h2>HTML, CSS, and JavaScript Development</h2>
+        <p>
+          I bring your designs to life using clean, 
+          maintainable code with industry-standard tools and frameworks.
+        </p>
+        <a href="#">Learn more</a>
+       </div>
+    </div>
+  </div>
+ </div>
+
+ <!-- .........Portfolio section.......... -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">MY WORK</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-5.jpeg">
+          <div class="layer">
+            <h3>Coding Screens</h3>
+            <p>
+              Screens with lines of code, IDEs (like VS Code), or syntax highlighting.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpeg">
+          <div class="layer">
+            <h3>Developer Workspace</h3>
+          <p>
+            A clean desk setup with a laptop, monitor, and coding on the screen.
+          </p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpeg">
+          <div class="layer">
+            <h3>Team Collaboration</h3>
+          <p>
+            Developers brainstorming or working together on laptops.
+          </p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-4.png">
+          <div class="layer">
+            <h3>Icons or Graphics of HTML, CSS, and JavaScript</h3>
+          <p>
+            Logos or symbols of programming languages like <HTML>, {CSS}, and JS.
+          </p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ............Contact Section.............. -->
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p></p> <i class="fa-regular fa-paper-plane"></i> owohadimora@gmail.com</p>
+          <p><i class="fa-sharp-duotone fa-solid fa-phone"></i> 09067438638</p>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/Adimora.owoh" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/AdimoraOwoh" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.instagram.com/adimoraowoh/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+          <a href="docs/CV_Adimora Owoh_January2025.pdf" download class=" btn btn2">Download Cv</a>
+        </div>
+        <div class="contact-right">
+          <form method="post" action="index.php">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="copyright">
+      <p>copyright &copy; Kingsley Owoh. Made for demo <i class="fa-solid fa-desktop"></i> purpose on front-end practical.</p>
+    </div>
+   </div>
+
+
+
+
+  <script>
+    // ............for About page..........
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove('active-link');
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-link'); 
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+
+
+    // .........for side menu small-screen...........
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+      sidemenu.style.right = '0';
+    }
+    function closemenu(){
+      sidemenu.style.right = '-200px';
+    }
+  </script>
+</body>
+</html>
